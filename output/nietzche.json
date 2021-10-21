@@ -1,0 +1,1614 @@
+[
+	{
+		"word": "plus",
+		"appear": 310
+	},
+	{
+		"word": "dans",
+		"appear": 221
+	},
+	{
+		"word": "pour",
+		"appear": 215
+	},
+	{
+		"word": "comme",
+		"appear": 175
+	},
+	{
+		"word": "nous",
+		"appear": 169
+	},
+	{
+		"word": "tout",
+		"appear": 148
+	},
+	{
+		"word": "avec",
+		"appear": 118
+	},
+	{
+		"word": "même",
+		"appear": 112
+	},
+	{
+		"word": "fait",
+		"appear": 93
+	},
+	{
+		"word": "être",
+		"appear": 91
+	},
+	{
+		"word": "cette",
+		"appear": 87
+	},
+	{
+		"word": "sont",
+		"appear": 83
+	},
+	{
+		"word": "cela",
+		"appear": 81
+	},
+	{
+		"word": "encore",
+		"appear": 79
+	},
+	{
+		"word": "elle",
+		"appear": 78
+	},
+	{
+		"word": "bien",
+		"appear": 78
+	},
+	{
+		"word": "faut",
+		"appear": 65
+	},
+	{
+		"word": "morale",
+		"appear": 64
+	},
+	{
+		"word": "volonté",
+		"appear": 60
+	},
+	{
+		"word": "mais",
+		"appear": 60
+	},
+	{
+		"word": "toute",
+		"appear": 60
+	},
+	{
+		"word": "tous",
+		"appear": 59
+	},
+	{
+		"word": "aussi",
+		"appear": 58
+	},
+	{
+		"word": "chose",
+		"appear": 58
+	},
+	{
+		"word": "leur",
+		"appear": 57
+	},
+	{
+		"word": "contre",
+		"appear": 54
+	},
+	{
+		"word": "notre",
+		"appear": 51
+	},
+	{
+		"word": "monde",
+		"appear": 49
+	},
+	{
+		"word": "raison",
+		"appear": 47
+	},
+	{
+		"word": "choses",
+		"appear": 47
+	},
+	{
+		"word": "quelque",
+		"appear": 46
+	},
+	{
+		"word": "point",
+		"appear": 44
+	},
+	{
+		"word": "temps",
+		"appear": 42
+	},
+	{
+		"word": "sens",
+		"appear": 42
+	},
+	{
+		"word": "peut",
+		"appear": 42
+	},
+	{
+		"word": "toutes",
+		"appear": 42
+	},
+	{
+		"word": "façon",
+		"appear": 41
+	},
+	{
+		"word": "sans",
+		"appear": 40
+	},
+	{
+		"word": "Mais",
+		"appear": 40
+	},
+	{
+		"word": "faire",
+		"appear": 38
+	},
+	{
+		"word": "cause",
+		"appear": 38
+	},
+	{
+		"word": "instincts",
+		"appear": 37
+	},
+	{
+		"word": "Socrate",
+		"appear": 33
+	},
+	{
+		"word": "grand",
+		"appear": 32
+	},
+	{
+		"word": "autre",
+		"appear": 32
+	},
+	{
+		"word": "force",
+		"appear": 32
+	},
+	{
+		"word": "tant",
+		"appear": 31
+	},
+	{
+		"word": "hommes",
+		"appear": 31
+	},
+	{
+		"word": "sous",
+		"appear": 31
+	},
+	{
+		"word": "toujours",
+		"appear": 31
+	},
+	{
+		"word": "exemple",
+		"appear": 30
+	},
+	{
+		"word": "soit",
+		"appear": 29
+	},
+	{
+		"word": "espèce",
+		"appear": 29
+	},
+	{
+		"word": "déjà",
+		"appear": 29
+	},
+	{
+		"word": "rien",
+		"appear": 28
+	},
+	{
+		"word": "était",
+		"appear": 28
+	},
+	{
+		"word": "jamais",
+		"appear": 28
+	},
+	{
+		"word": "dire",
+		"appear": 28
+	},
+	{
+		"word": "réalité",
+		"appear": 27
+	},
+	{
+		"word": "autres",
+		"appear": 27
+	},
+	{
+		"word": "premier",
+		"appear": 27
+	},
+	{
+		"word": "peut-être",
+		"appear": 27
+	},
+	{
+		"word": "grande",
+		"appear": 27
+	},
+	{
+		"word": "telle",
+		"appear": 27
+	},
+	{
+		"word": "moins",
+		"appear": 27
+	},
+	{
+		"word": "seulement",
+		"appear": 26
+	},
+	{
+		"word": "sentiment",
+		"appear": 25
+	},
+	{
+		"word": "homme",
+		"appear": 25
+	},
+	{
+		"word": "contraire",
+		"appear": 25
+	},
+	{
+		"word": "avoir",
+		"appear": 25
+	},
+	{
+		"word": "ainsi",
+		"appear": 25
+	},
+	{
+		"word": "nature",
+		"appear": 25
+	},
+	{
+		"word": "sait",
+		"appear": 25
+	},
+	{
+		"word": "forme",
+		"appear": 24
+	},
+	{
+		"word": "sorte",
+		"appear": 24
+	},
+	{
+		"word": "besoin",
+		"appear": 24
+	},
+	{
+		"word": "entre",
+		"appear": 23
+	},
+	{
+		"word": "Platon",
+		"appear": 23
+	},
+	{
+		"word": "avait",
+		"appear": 23
+	},
+	{
+		"word": "elles",
+		"appear": 23
+	},
+	{
+		"word": "celui",
+		"appear": 23
+	},
+	{
+		"word": "état",
+		"appear": 22
+	},
+	{
+		"word": "valeur",
+		"appear": 22
+	},
+	{
+		"word": "Dieu",
+		"appear": 22
+	},
+	{
+		"word": "avant",
+		"appear": 22
+	},
+	{
+		"word": "trop",
+		"appear": 22
+	},
+	{
+		"word": "culture",
+		"appear": 21
+	},
+	{
+		"word": "possible",
+		"appear": 21
+	},
+	{
+		"word": "droit",
+		"appear": 21
+	},
+	{
+		"word": "décadence",
+		"appear": 21
+	},
+	{
+		"word": "vrai",
+		"appear": 21
+	},
+	{
+		"word": "lui-même",
+		"appear": 21
+	},
+	{
+		"word": "donc",
+		"appear": 21
+	},
+	{
+		"word": "conscience",
+		"appear": 21
+	},
+	{
+		"word": "libre",
+		"appear": 20
+	},
+	{
+		"word": "assez",
+		"appear": 20
+	},
+	{
+		"word": "propre",
+		"appear": 20
+	},
+	{
+		"word": "Dans",
+		"appear": 20
+	},
+	{
+		"word": "veut",
+		"appear": 20
+	},
+	{
+		"word": "quoi",
+		"appear": 20
+	},
+	{
+		"word": "alors",
+		"appear": 20
+	},
+	{
+		"word": "beaucoup",
+		"appear": 20
+	},
+	{
+		"word": "Pour",
+		"appear": 20
+	},
+	{
+		"word": "puissance",
+		"appear": 19
+	},
+	{
+		"word": "trouve",
+		"appear": 19
+	},
+	{
+		"word": "autrement",
+		"appear": 19
+	},
+	{
+		"word": "ceux",
+		"appear": 19
+	},
+	{
+		"word": "Tout",
+		"appear": 19
+	},
+	{
+		"word": "philosophes",
+		"appear": 18
+	},
+	{
+		"word": "grands",
+		"appear": 18
+	},
+	{
+		"word": "Nous",
+		"appear": 18
+	},
+	{
+		"word": "première",
+		"appear": 18
+	},
+	{
+		"word": "fond",
+		"appear": 18
+	},
+	{
+		"word": "parce",
+		"appear": 18
+	},
+	{
+		"word": "pourquoi",
+		"appear": 18
+	},
+	{
+		"word": "part",
+		"appear": 18
+	},
+	{
+		"word": "rendre",
+		"appear": 17
+	},
+	{
+		"word": "christianisme",
+		"appear": 17
+	},
+	{
+		"word": "instinct",
+		"appear": 17
+	},
+	{
+		"word": "mort",
+		"appear": 17
+	},
+	{
+		"word": "leurs",
+		"appear": 17
+	},
+	{
+		"word": "devant",
+		"appear": 17
+	},
+	{
+		"word": "vertu",
+		"appear": 17
+	},
+	{
+		"word": "savoir",
+		"appear": 17
+	},
+	{
+		"word": "psychologie",
+		"appear": 17
+	},
+	{
+		"word": "chrétien",
+		"appear": 16
+	},
+	{
+		"word": "idée",
+		"appear": 16
+	},
+	{
+		"word": "effet",
+		"appear": 16
+	},
+	{
+		"word": "goût",
+		"appear": 16
+	},
+	{
+		"word": "parmi",
+		"appear": 16
+	},
+	{
+		"word": "jugement",
+		"appear": 16
+	},
+	{
+		"word": "suis",
+		"appear": 16
+	},
+	{
+		"word": "doit",
+		"appear": 16
+	},
+	{
+		"word": "serait",
+		"appear": 16
+	},
+	{
+		"word": "chez",
+		"appear": 16
+	},
+	{
+		"word": "devient",
+		"appear": 16
+	},
+	{
+		"word": "allemand",
+		"appear": 16
+	},
+	{
+		"word": "femme",
+		"appear": 16
+	},
+	{
+		"word": "presque",
+		"appear": 16
+	},
+	{
+		"word": "philosophe",
+		"appear": 16
+	},
+	{
+		"word": "seul",
+		"appear": 16
+	},
+	{
+		"word": "mauvais",
+		"appear": 16
+	},
+	{
+		"word": "Gœthe",
+		"appear": 15
+	},
+	{
+		"word": "Allemands",
+		"appear": 15
+	},
+	{
+		"word": "reste",
+		"appear": 15
+	},
+	{
+		"word": "lorsque",
+		"appear": 15
+	},
+	{
+		"word": "type",
+		"appear": 15
+	},
+	{
+		"word": "physiologique",
+		"appear": 15
+	},
+	{
+		"word": "malade",
+		"appear": 15
+	},
+	{
+		"word": "vous",
+		"appear": 15
+	},
+	{
+		"word": "côté",
+		"appear": 15
+	},
+	{
+		"word": "dont",
+		"appear": 15
+	},
+	{
+		"word": "esprit",
+		"appear": 14
+	},
+	{
+		"word": "conséquence",
+		"appear": 14
+	},
+	{
+		"word": "absolument",
+		"appear": 14
+	},
+	{
+		"word": "soi-même",
+		"appear": 14
+	},
+	{
+		"word": "plutôt",
+		"appear": 14
+	},
+	{
+		"word": "quand",
+		"appear": 14
+	},
+	{
+		"word": "votre",
+		"appear": 14
+	},
+	{
+		"word": "sérieux",
+		"appear": 14
+	},
+	{
+		"word": "beauté",
+		"appear": 13
+	},
+	{
+		"word": "liberté",
+		"appear": 13
+	},
+	{
+		"word": "devenir",
+		"appear": 13
+	},
+	{
+		"word": "vers",
+		"appear": 13
+	},
+	{
+		"word": "dégénérescence",
+		"appear": 13
+	},
+	{
+		"word": "sentiments",
+		"appear": 13
+	},
+	{
+		"word": "maître",
+		"appear": 13
+	},
+	{
+		"word": "quelle",
+		"appear": 13
+	},
+	{
+		"word": "Grecs",
+		"appear": 13
+	},
+	{
+		"word": "partie",
+		"appear": 13
+	},
+	{
+		"word": "celle",
+		"appear": 13
+	},
+	{
+		"word": "sommes",
+		"appear": 13
+	},
+	{
+		"word": "voit",
+		"appear": 13
+	},
+	{
+		"word": "fort",
+		"appear": 13
+	},
+	{
+		"word": "fois",
+		"appear": 13
+	},
+	{
+		"word": "vérité",
+		"appear": 13
+	},
+	{
+		"word": "nouvelle",
+		"appear": 13
+	},
+	{
+		"word": "parler",
+		"appear": 13
+	},
+	{
+		"word": "longtemps",
+		"appear": 13
+	},
+	{
+		"word": "guerre",
+		"appear": 13
+	},
+	{
+		"word": "beau",
+		"appear": 12
+	},
+	{
+		"word": "institutions",
+		"appear": 12
+	},
+	{
+		"word": "action",
+		"appear": 12
+	},
+	{
+		"word": "appelle",
+		"appear": 12
+	},
+	{
+		"word": "Schopenhauer",
+		"appear": 12
+	},
+	{
+		"word": "quelconque",
+		"appear": 12
+	},
+	{
+		"word": "moral",
+		"appear": 12
+	},
+	{
+		"word": "passion",
+		"appear": 12
+	},
+	{
+		"word": "général",
+		"appear": 12
+	},
+	{
+		"word": "formule",
+		"appear": 12
+	},
+	{
+		"word": "retour",
+		"appear": 12
+	},
+	{
+		"word": "elle-même",
+		"appear": 12
+	},
+	{
+		"word": "lutte",
+		"appear": 12
+	},
+	{
+		"word": "pouvoir",
+		"appear": 12
+	},
+	{
+		"word": "combien",
+		"appear": 12
+	},
+	{
+		"word": "peuple",
+		"appear": 12
+	},
+	{
+		"word": "problème",
+		"appear": 12
+	},
+	{
+		"word": "prendre",
+		"appear": 12
+	},
+	{
+		"word": "voilà",
+		"appear": 12
+	},
+	{
+		"word": "haine",
+		"appear": 12
+	},
+	{
+		"word": "langage",
+		"appear": 12
+	},
+	{
+		"word": "deux",
+		"appear": 12
+	},
+	{
+		"word": "comment",
+		"appear": 12
+	},
+	{
+		"word": "mariage",
+		"appear": 11
+	},
+	{
+		"word": "siècle",
+		"appear": 11
+	},
+	{
+		"word": "génie",
+		"appear": 11
+	},
+	{
+		"word": "style",
+		"appear": 11
+	},
+	{
+		"word": "moderne",
+		"appear": 11
+	},
+	{
+		"word": "allemande",
+		"appear": 11
+	},
+	{
+		"word": "pourrait",
+		"appear": 11
+	},
+	{
+		"word": "race",
+		"appear": 11
+	},
+	{
+		"word": "religion",
+		"appear": 11
+	},
+	{
+		"word": "forte",
+		"appear": 11
+	},
+	{
+		"word": "condition",
+		"appear": 11
+	},
+	{
+		"word": "moyens",
+		"appear": 11
+	},
+	{
+		"word": "formes",
+		"appear": 11
+	},
+	{
+		"word": "question",
+		"appear": 11
+	},
+	{
+		"word": "véritable",
+		"appear": 11
+	},
+	{
+		"word": "donné",
+		"appear": 11
+	},
+	{
+		"word": "Rien",
+		"appear": 11
+	},
+	{
+		"word": "raisons",
+		"appear": 11
+	},
+	{
+		"word": "société",
+		"appear": 11
+	},
+	{
+		"word": "petite",
+		"appear": 11
+	},
+	{
+		"word": "haut",
+		"appear": 11
+	},
+	{
+		"word": "partout",
+		"appear": 11
+	},
+	{
+		"word": "étaient",
+		"appear": 11
+	},
+	{
+		"word": "compte",
+		"appear": 11
+	},
+	{
+		"word": "précisément",
+		"appear": 11
+	},
+	{
+		"word": "erreur",
+		"appear": 11
+	},
+	{
+		"word": "maintenant",
+		"appear": 11
+	},
+	{
+		"word": "vertus",
+		"appear": 11
+	},
+	{
+		"word": "voir",
+		"appear": 11
+	},
+	{
+		"word": "demande",
+		"appear": 11
+	},
+	{
+		"word": "veux",
+		"appear": 11
+	},
+	{
+		"word": "esprits",
+		"appear": 11
+	},
+	{
+		"word": "chaque",
+		"appear": 11
+	},
+	{
+		"word": "nécessaire",
+		"appear": 11
+	},
+	{
+		"word": "milieu",
+		"appear": 11
+	},
+	{
+		"word": "très",
+		"appear": 10
+	},
+	{
+		"word": "a-t-il",
+		"appear": 10
+	},
+	{
+		"word": "causes",
+		"appear": 10
+	},
+	{
+		"word": "principe",
+		"appear": 10
+	},
+	{
+		"word": "célèbre",
+		"appear": 10
+	},
+	{
+		"word": "venir",
+		"appear": 10
+	},
+	{
+		"word": "science",
+		"appear": 10
+	},
+	{
+		"word": "profond",
+		"appear": 10
+	},
+	{
+		"word": "eux-mêmes",
+		"appear": 10
+	},
+	{
+		"word": "chrétienne",
+		"appear": 10
+	},
+	{
+		"word": "croyance",
+		"appear": 10
+	},
+	{
+		"word": "danger",
+		"appear": 10
+	},
+	{
+		"word": "personne",
+		"appear": 10
+	},
+	{
+		"word": "ligne",
+		"appear": 10
+	},
+	{
+		"word": "dernier",
+		"appear": 10
+	},
+	{
+		"word": "main",
+		"appear": 10
+	},
+	{
+		"word": "représente",
+		"appear": 10
+	},
+	{
+		"word": "nouveau",
+		"appear": 10
+	},
+	{
+		"word": "aurait",
+		"appear": 10
+	},
+	{
+		"word": "vouloir",
+		"appear": 10
+	},
+	{
+		"word": "compris",
+		"appear": 10
+	},
+	{
+		"word": "coup",
+		"appear": 10
+	},
+	{
+		"word": "mensonge",
+		"appear": 10
+	},
+	{
+		"word": "manque",
+		"appear": 10
+	},
+	{
+		"word": "vivre",
+		"appear": 10
+	},
+	{
+		"word": "livre",
+		"appear": 10
+	},
+	{
+		"word": "jour",
+		"appear": 10
+	},
+	{
+		"word": "Cela",
+		"appear": 10
+	},
+	{
+		"word": "psychologue",
+		"appear": 10
+	},
+	{
+		"word": "possède",
+		"appear": 10
+	},
+	{
+		"word": "quel",
+		"appear": 10
+	},
+	{
+		"word": "parle",
+		"appear": 10
+	},
+	{
+		"word": "France",
+		"appear": 10
+	},
+	{
+		"word": "dionysien",
+		"appear": 9
+	},
+	{
+		"word": "Carlyle",
+		"appear": 9
+	},
+	{
+		"word": "Rousseau",
+		"appear": 9
+	},
+	{
+		"word": "puisse",
+		"appear": 9
+	},
+	{
+		"word": "philosophie",
+		"appear": 9
+	},
+	{
+		"word": "certain",
+		"appear": 9
+	},
+	{
+		"word": "supérieure",
+		"appear": 9
+	},
+	{
+		"word": "livres",
+		"appear": 9
+	},
+	{
+		"word": "aucune",
+		"appear": 9
+	},
+	{
+		"word": "prêtres",
+		"appear": 9
+	},
+	{
+		"word": "natures",
+		"appear": 9
+	},
+	{
+		"word": "désir",
+		"appear": 9
+	},
+	{
+		"word": "devenue",
+		"appear": 9
+	},
+	{
+		"word": "considère",
+		"appear": 9
+	},
+	{
+		"word": "notion",
+		"appear": 9
+	},
+	{
+		"word": "monde-vérité",
+		"appear": 9
+	},
+	{
+		"word": "voulait",
+		"appear": 9
+	},
+	{
+		"word": "Lorsque",
+		"appear": 9
+	},
+	{
+		"word": "pratique",
+		"appear": 9
+	},
+	{
+		"word": "laid",
+		"appear": 9
+	},
+	{
+		"word": "objection",
+		"appear": 9
+	},
+	{
+		"word": "Cette",
+		"appear": 9
+	},
+	{
+		"word": "sages",
+		"appear": 9
+	},
+	{
+		"word": "idéal",
+		"appear": 9
+	},
+	{
+		"word": "autrefois",
+		"appear": 9
+	},
+	{
+		"word": "gens",
+		"appear": 9
+	},
+	{
+		"word": "donner",
+		"appear": 9
+	},
+	{
+		"word": "mettre",
+		"appear": 9
+	},
+	{
+		"word": "vient",
+		"appear": 9
+	},
+	{
+		"word": "époque",
+		"appear": 9
+	},
+	{
+		"word": "bonheur",
+		"appear": 9
+	},
+	{
+		"word": "Comment",
+		"appear": 9
+	},
+	{
+		"word": "moyen",
+		"appear": 9
+	},
+	{
+		"word": "petit",
+		"appear": 9
+	},
+	{
+		"word": "mesure",
+		"appear": 9
+	},
+	{
+		"word": "joie",
+		"appear": 8
+	},
+	{
+		"word": "grandes",
+		"appear": 8
+	},
+	{
+		"word": "noble",
+		"appear": 8
+	},
+	{
+		"word": "nombre",
+		"appear": 8
+	},
+	{
+		"word": "Tchândâla",
+		"appear": 8
+	},
+	{
+		"word": "dépendent",
+		"appear": 8
+	},
+	{
+		"word": "trouver",
+		"appear": 8
+	},
+	{
+		"word": "causalité",
+		"appear": 8
+	},
+	{
+		"word": "faits",
+		"appear": 8
+	},
+	{
+		"word": "certaines",
+		"appear": 8
+	},
+	{
+		"word": "autant",
+		"appear": 8
+	},
+	{
+		"word": "connaît",
+		"appear": 8
+	},
+	{
+		"word": "quelques",
+		"appear": 8
+	},
+	{
+		"word": "politique",
+		"appear": 8
+	},
+	{
+		"word": "faiblesse",
+		"appear": 8
+	},
+	{
+		"word": "Elle",
+		"appear": 8
+	},
+	{
+		"word": "Kant",
+		"appear": 8
+	},
+	{
+		"word": "proposition",
+		"appear": 8
+	},
+	{
+		"word": "lieu",
+		"appear": 8
+	},
+	{
+		"word": "supérieur",
+		"appear": 8
+	},
+	{
+		"word": "conditions",
+		"appear": 8
+	},
+	{
+		"word": "cesse",
+		"appear": 8
+	},
+	{
+		"word": "devrait",
+		"appear": 8
+	},
+	{
+		"word": "mouvement",
+		"appear": 8
+	},
+	{
+		"word": "réel",
+		"appear": 8
+	},
+	{
+		"word": "font",
+		"appear": 8
+	},
+	{
+		"word": "vengeance",
+		"appear": 8
+	},
+	{
+		"word": "prend",
+		"appear": 8
+	},
+	{
+		"word": "bonne",
+		"appear": 8
+	},
+	{
+		"word": "dialectique",
+		"appear": 8
+	},
+	{
+		"word": "comprendre",
+		"appear": 8
+	},
+	{
+		"word": "logique",
+		"appear": 8
+	},
+	{
+		"word": "désirs",
+		"appear": 8
+	},
+	{
+		"word": "près",
+		"appear": 8
+	},
+	{
+		"word": "aller",
+		"appear": 8
+	},
+	{
+		"word": "yeux",
+		"appear": 8
+	},
+	{
+		"word": "péché",
+		"appear": 8
+	},
+	{
+		"word": "cœur",
+		"appear": 8
+	},
+	{
+		"word": "Avec",
+		"appear": 8
+	},
+	{
+		"word": "tragique",
+		"appear": 8
+	},
+	{
+		"word": "après",
+		"appear": 8
+	},
+	{
+		"word": "actions",
+		"appear": 8
+	},
+	{
+		"word": "bête",
+		"appear": 8
+	},
+	{
+		"word": "courage",
+		"appear": 8
+	},
+	{
+		"word": "dernière",
+		"appear": 8
+	},
+	{
+		"word": "lumière",
+		"appear": 8
+	},
+	{
+		"word": "Pourquoi",
+		"appear": 7
+	},
+	{
+		"word": "apprendre",
+		"appear": 7
+	},
+	{
+		"word": "pessimisme",
+		"appear": 7
+	},
+	{
+		"word": "Napoléon",
+		"appear": 7
+	},
+	{
+		"word": "époques",
+		"appear": 7
+	},
+	{
+		"word": "haute",
+		"appear": 7
+	},
+	{
+		"word": "Allemagne",
+		"appear": 7
+	},
+	{
+		"word": "sent",
+		"appear": 7
+	},
+	{
+		"word": "résultat",
+		"appear": 7
+	},
+	{
+		"word": "existe",
+		"appear": 7
+	},
+	{
+		"word": "forces",
+		"appear": 7
+	},
+	{
+		"word": "responsabilité",
+		"appear": 7
+	},
+	{
+		"word": "semble",
+		"appear": 7
+	},
+	{
+		"word": "produit",
+		"appear": 7
+	},
+	{
+		"word": "trois",
+		"appear": 7
+	},
+	{
+		"word": "faute",
+		"appear": 7
+	},
+	{
+		"word": "fatalité",
+		"appear": 7
+	},
+	{
+		"word": "passé",
+		"appear": 7
+	},
+	{
+		"word": "travail",
+		"appear": 7
+	},
+	{
+		"word": "jeune",
+		"appear": 7
+	},
+	{
+		"word": "conséquent",
+		"appear": 7
+	},
+	{
+		"word": "terrible",
+		"appear": 7
+	},
+	{
+		"word": "présent",
+		"appear": 7
+	},
+	{
+		"word": "avons",
+		"appear": 7
+	},
+	{
+		"word": "suit",
+		"appear": 7
+	},
+	{
+		"word": "contradiction",
+		"appear": 7
+	},
+	{
+		"word": "devenu",
+		"appear": 7
+	},
+	{
+		"word": "supérieures",
+		"appear": 7
+	},
+	{
+		"word": "Toutes",
+		"appear": 7
+	},
+	{
+		"word": "signes",
+		"appear": 7
+	},
+	{
+		"word": "rendu",
+		"appear": 7
+	},
+	{
+		"word": "donne",
+		"appear": 7
+	},
+	{
+		"word": "conservation",
+		"appear": 7
+	},
+	{
+		"word": "laisse",
+		"appear": 7
+	},
+	{
+		"word": "pitié",
+		"appear": 7
+	},
+	{
+		"word": "corps",
+		"appear": 7
+	},
+	{
+		"word": "criminel",
+		"appear": 7
+	},
+	{
+		"word": "signe",
+		"appear": 7
+	},
+	{
+		"word": "doute",
+		"appear": 7
+	},
+	{
+		"word": "droite",
+		"appear": 7
+	},
+	{
+		"word": "servir",
+		"appear": 7
+	},
+	{
+		"word": "penser",
+		"appear": 7
+	},
+	{
+		"word": "puisque",
+		"appear": 7
+	},
+	{
+		"word": "plein",
+		"appear": 7
+	},
+	{
+		"word": "depuis",
+		"appear": 7
+	},
+	{
+		"word": "écrire",
+		"appear": 7
+	},
+	{
+		"word": "Toute",
+		"appear": 7
+	},
+	{
+		"word": "nobles",
+		"appear": 7
+	},
+	{
+		"word": "entendre",
+		"appear": 7
+	},
+	{
+		"word": "événement",
+		"appear": 7
+	},
+	{
+		"word": "valeurs",
+		"appear": 7
+	}
+]
