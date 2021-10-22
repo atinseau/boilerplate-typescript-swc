@@ -9,7 +9,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.deleteWord = exports.updateWord = exports.insertWord = exports.getAllWord = exports.getWordById = void 0;
+exports.deleteWord = exports.updateWord = exports.insertWord = exports.getCountWord = exports.getAllWord = exports.getWordById = void 0;
 const graphql_request_1 = require("graphql-request");
 const instance_1 = require("../database/instance");
 const getWordById = (id) => __awaiter(void 0, void 0, void 0, function* () {
@@ -40,6 +40,21 @@ const getAllWord = () => __awaiter(void 0, void 0, void 0, function* () {
     return words[Object.keys(words)[0]];
 });
 exports.getAllWord = getAllWord;
+const getCountWord = (limit = 0) => __awaiter(void 0, void 0, void 0, function* () {
+    const words = yield (0, instance_1.qfetch)((0, graphql_request_1.gql) `
+		query MyQuery($limit: Int) {
+			words (limit: $limit) {
+				id
+				synonym_ids
+				word
+			}
+		}
+	`, { limit });
+    if (words == null)
+        return null;
+    return words;
+});
+exports.getCountWord = getCountWord;
 const insertWord = (word) => __awaiter(void 0, void 0, void 0, function* () {
     const words = yield (0, instance_1.qfetch)((0, graphql_request_1.gql) `
 		mutation MyMutation($word: String) {

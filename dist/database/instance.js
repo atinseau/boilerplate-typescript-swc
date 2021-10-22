@@ -15,10 +15,14 @@ require("../config");
 const qfetch = (req, body = {}) => __awaiter(void 0, void 0, void 0, function* () {
     try {
         const url = process.env.ENDPOINT;
-        const data = yield (0, graphql_request_1.request)("http://localhost:8080/v1/graphql", req, body);
+        const data = yield (0, graphql_request_1.request)("http://localhost:8080/v1/graphql", req, body, {
+            "x-hasura-admin-secret": process.env.SECRET
+        });
         return data;
     }
     catch (e) {
+        if (process.env.DEBUG == "true")
+            console.log(e);
         return null;
     }
 });

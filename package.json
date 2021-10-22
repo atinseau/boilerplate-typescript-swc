@@ -4,7 +4,7 @@
 	"description": "",
 	"main": "dist/index.js",
 	"scripts": {
-		"build": "tsc",
+		"prestart": "tsc",
 		"start": "node .",
 		"dev": "tsc -w & nodemon ."
 	},
@@ -12,11 +12,13 @@
 	"license": "ISC",
 	"dependencies": {
 		"axios": "^0.23.0",
+		"bcrypt": "^5.0.1",
 		"cors": "^2.8.5",
 		"dotenv": "^10.0.0",
 		"express": "^4.17.1",
 		"graphql": "^15.6.1",
 		"graphql-request": "^3.6.1",
+		"jsonwebtoken": "^8.5.1",
 		"node-fetch": "^3.0.0",
 		"puppeteer": "^10.4.0"
 	},
@@ -24,7 +26,9 @@
 		"@babel/preset-env"
 	],
 	"devDependencies": {
+		"@types/bcrypt": "^5.0.0",
 		"@types/express": "^4.17.13",
+		"@types/jsonwebtoken": "^8.5.5",
 		"@types/node": "^16.11.1",
 		"@types/node-fetch": "^3.0.3",
 		"@typescript-eslint/eslint-plugin": "^5.1.0",

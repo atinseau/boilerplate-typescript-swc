@@ -36,6 +36,23 @@ export const getAllWord = async (): Promise<Word[]> => {
 	return words[Object.keys(words)[0]]
 }
 
+
+export const getCountWord = async (limit: Number = 0): Promise<Word[]> => {
+	const words = await qfetch(gql`
+		query MyQuery($limit: Int) {
+			words (limit: $limit) {
+				id
+				synonym_ids
+				word
+			}
+		}
+	`, { limit })
+	if (words == null)
+		return null
+	return words
+}
+
+
 export const insertWord = async (word: Word): Promise<Word | null> => {
 	const words = await qfetch(gql`
 		mutation MyMutation($word: String) {
