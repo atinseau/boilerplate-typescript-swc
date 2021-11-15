@@ -1,6 +1,5 @@
 import Express from "express";
 
-// import './prompt'
 import './config'
 import { authRouter } from "./routes/auth";
 import { definitionRouter } from "./routes/definition";

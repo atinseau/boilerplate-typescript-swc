@@ -1,29 +1,17 @@
-"use strict";
-var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
-    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.searchWordLike = exports.deleteWord = exports.updateWord = exports.insertWord = exports.getCountWord = exports.getAllWord = exports.getWordById = exports.getOneWordByOffset = exports.searchWord = exports.getWordCount = exports.wordQuery = void 0;
-const graphql_request_1 = require("graphql-request");
-const instance_1 = require("../../database/instance");
-const definitions_1 = require("../definitions");
-exports.wordQuery = `
+import { gql } from 'graphql-request';
+import { qfetch } from '../../database/instance';
+import { definitionQuery } from '../definitions';
+export const wordQuery = `
 	id
 	word
 	synonym_ids
 	definition {
-		${definitions_1.definitionQuery}
+		${definitionQuery}
 	}
 `;
-const getWordCount = () => __awaiter(void 0, void 0, void 0, function* () {
+export const getWordCount = async ()=>{
     return {
-        count: (yield (0, instance_1.qfetch)((0, graphql_request_1.gql) `
+        count: (await qfetch(gql`
 		query MyQuery {
 			words_aggregate {
 				aggregate {
@@ -33,126 +21,120 @@ const getWordCount = () => __awaiter(void 0, void 0, void 0, function* () {
 		}
 	`)).words_aggregate.aggregate.count
     };
-});
-exports.getWordCount = getWordCount;
-const searchWord = (word) => __awaiter(void 0, void 0, void 0, function* () {
-    const res = (yield (0, instance_1.qfetch)((0, graphql_request_1.gql) `
+};
+export const searchWord = async (word)=>{
+    const res = (await qfetch(gql`
 		query MyQuery($_eq: String) {
 			words(where: {word: {_eq: $_eq}}) {
-				${exports.wordQuery}
+				${wordQuery}
 			}
 		}
-	`, { _eq: word })).words;
-    if (res.length == 0)
-        return null;
+	`, {
+        _eq: word
+    })).words;
+    if (res.length == 0) return null;
     return res[0];
-});
-exports.searchWord = searchWord;
-const getOneWordByOffset = (offset) => __awaiter(void 0, void 0, void 0, function* () {
-    return (yield (0, instance_1.qfetch)((0, graphql_request_1.gql) `
+};
+export const getOneWordByOffset = async (offset)=>{
+    return (await qfetch(gql`
 		query MyQuery {
 			words(limit: 1, offset: ${offset}) {
-				${exports.wordQuery}
+				${wordQuery}
 			}
 		}
 	`)).words[0];
-});
-exports.getOneWordByOffset = getOneWordByOffset;
-const getWordById = (id) => __awaiter(void 0, void 0, void 0, function* () {
-    const words = (yield (0, instance_1.qfetch)((0, graphql_request_1.gql) `
+};
+export const getWordById = async (id)=>{
+    const words = await qfetch(gql`
 		query MyQuery($_eq: uuid) {
 			words(where: {id: {_eq: $_eq}}) {
-				${exports.wordQuery}
+				${wordQuery}
 			}
 		}
-	`, { _eq: id }));
-    if (words)
-        return words.words[0];
+	`, {
+        _eq: id
+    });
+    if (words) return words.words[0];
     return null;
-});
-exports.getWordById = getWordById;
-const getAllWord = () => __awaiter(void 0, void 0, void 0, function* () {
-    const words = yield (0, instance_1.qfetch)((0, graphql_request_1.gql) `
+};
+export const getAllWord = async ()=>{
+    const words = await qfetch(gql`
 		query MyQuery {
 			words {
-				${exports.wordQuery}
+				${wordQuery}
 			}
 		}
 	`);
-    if (words == null)
-        return null;
+    if (words == null) return null;
     return words[Object.keys(words)[0]];
-});
-exports.getAllWord = getAllWord;
-const getCountWord = (limit = 0) => __awaiter(void 0, void 0, void 0, function* () {
-    const words = yield (0, instance_1.qfetch)((0, graphql_request_1.gql) `
+};
+export const getCountWord = async (limit = 0)=>{
+    const words = await qfetch(gql`
 		query MyQuery($limit: Int) {
 			words (limit: $limit) {
-				${exports.wordQuery}
+				${wordQuery}
 			}
 		}
-	`, { limit });
-    if (words == null)
-        return null;
+	`, {
+        limit
+    });
+    if (words == null) return null;
     return words;
-});
-exports.getCountWord = getCountWord;
-const insertWord = (word) => __awaiter(void 0, void 0, void 0, function* () {
-    const words = yield (0, instance_1.qfetch)((0, graphql_request_1.gql) `
+};
+export const insertWord = async (word)=>{
+    const words = await qfetch(gql`
 		mutation MyMutation($word: String) {
 			insert_words(objects: {word: $word}) {
 				returning {
-					${exports.wordQuery}
+					${wordQuery}
 				}
 			}
 		}
-	`, { word });
-    if (words)
-        return words.insert_words.returning[0];
+	`, {
+        word
+    });
+    if (words) return words.insert_words.returning[0];
     return null;
-});
-exports.insertWord = insertWord;
-const updateWord = (id, synonym_ids) => __awaiter(void 0, void 0, void 0, function* () {
-    const word = yield (0, exports.getWordById)(id);
-    if (!word)
-        return null;
-    if (JSON.stringify(synonym_ids) == JSON.stringify(word.synonym_ids))
-        return null;
-    const update = yield (0, instance_1.qfetch)((0, graphql_request_1.gql) `
+};
+export const updateWord = async (id, synonym_ids)=>{
+    const word = await getWordById(id);
+    if (!word) return null;
+    if (JSON.stringify(synonym_ids) == JSON.stringify(word.synonym_ids)) return null;
+    const update = await qfetch(gql`
 		mutation MyMutation($_eq: uuid, $synonym_ids: json) {
 			update_words(where: {id: {_eq: $_eq}}, _set: {synonym_ids: $synonym_ids}) {
 				affected_rows
 				returning {
-					${exports.wordQuery}
+					${wordQuery}
 				}
 			}
 		}
-	`, { _eq: id, synonym_ids: synonym_ids });
-    if (update)
-        return update.update_words.returning[0];
+	`, {
+        _eq: id,
+        synonym_ids: synonym_ids
+    });
+    if (update) return update.update_words.returning[0];
     return null;
-});
-exports.updateWord = updateWord;
-const deleteWord = (id) => __awaiter(void 0, void 0, void 0, function* () {
-    const del = (0, instance_1.qfetch)((0, graphql_request_1.gql) `
+};
+export const deleteWord = async (id)=>{
+    const del = qfetch(gql`
 		mutation MyMutation2($_eq: uuid = "") {
 			delete_words(where: {id: {_eq: $_eq}}) {
 				affected_rows
 			}
 		}
-	`, { _eq: id });
+	`, {
+        _eq: id
+    });
     return del;
-});
-exports.deleteWord = deleteWord;
-const searchWordLike = (query) => __awaiter(void 0, void 0, void 0, function* () {
-    const res = (yield (0, instance_1.qfetch)((0, graphql_request_1.gql) `
+};
+export const searchWordLike = async (query)=>{
+    const res = (await qfetch(gql`
 		query MyQuery($_like: String = "${query}%") {
 			words(where: {word: {_like: $_like }}, limit: 250) {
-				${exports.wordQuery}
+				${wordQuery}
 			}
 		}
 	`)).words;
     return res;
-});
-exports.searchWordLike = searchWordLike;
-//# sourceMappingURL=index.js.map
+};
