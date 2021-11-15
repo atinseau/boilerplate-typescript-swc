@@ -15,6 +15,4 @@ app.use('/definition', definitionRouter);
 app.get('/', (req, res)=>{
     res.send(process.env.ENDPOINT);
 });
-app.listen(PORT, ()=>{
-    console.log(`Listing on port ${PORT}...`);
-});
+app.listen(PORT);

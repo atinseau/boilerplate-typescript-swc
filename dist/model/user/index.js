@@ -34,6 +34,7 @@ export const register = async (email, username, password)=>{
     if (email && username && password) {
         return await new Promise((resolve)=>{
             bcrypt.hash(password, 10, async (err, hash)=>{
+                console.log("hash");
                 resolve(await insertUser(email, username, hash));
             });
         });

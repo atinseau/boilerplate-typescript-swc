@@ -77,12 +77,23 @@ router.post('/email-is-taken', async (req, res) => {
 
 	const status = await emailIsTaken(email)
 
-	if (status != null)
-		res.send({ status })
+	
+	console.log(status)
+
+
+	if (status == null) {
+		res.send({
+			status: 307,
+			msg: "Invalid email"
+		})
+		return;
+	}
+	if (!status)
+		res.send({ taken: status })
 	else {
 		res.send({
 			status: 307,
-			msg: "There is no email in body"
+			msg: "Email already used"
 		})
 	}
 })
@@ -92,12 +103,20 @@ router.post('/username-is-taken', async (req, res) => {
 
 	const status = await usernameIsTaken(username)
 
-	if (status != null)
-		res.send({ status })
+	
+	if (status == null) {
+		res.send({
+			status: 307,
+			msg: "Invalid username"
+		})
+		return;
+	}
+	if (!status)
+		res.send({ taken: status })
 	else {
 		res.send({
 			status: 307,
-			msg: "There is no username in body"
+			msg: "Username already used"
 		})
 	}
 })
