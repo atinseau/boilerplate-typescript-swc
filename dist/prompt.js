@@ -31,9 +31,6 @@ rl.on('line', (line) => __awaiter(void 0, void 0, void 0, function* () {
         if (!args[1])
             console.log("Missing parameter");
         switch (args[1]) {
-            case "words":
-                yield (0, words_1.seedWord)();
-                break;
             case "syn":
                 yield (0, synonyms_1.injectSynonym)();
                 break;

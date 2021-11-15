@@ -21,8 +21,6 @@ const qfetch = (req, body = {}) => __awaiter(void 0, void 0, void 0, function* (
         return data;
     }
     catch (e) {
-        if (process.env.DEBUG == "true")
-            console.log(e);
         return null;
     }
 });

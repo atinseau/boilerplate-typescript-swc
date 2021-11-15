@@ -1,11 +1,14 @@
 import Express from 'express'
-import { register, isAuth, login, logout, emailIsTaken, usernameIsTaken } from '../model/user'
 
+import { emailIsTaken, usernameIsTaken, userByToken } from '../model/user/query'
+import { register, login, logout, formattedUser, isAuth } from '../model/user/index'
+import { authMiddleware } from '../middleware/auth'
 
 const router = Express.Router()
 
-router.use((req, res, next) => {
-	console.log("auth request")
+router.use(async (req, res, next) => {
+	if (!await authMiddleware(req, res, ['/user']))
+		return;
 	next()
 })
 
@@ -60,10 +63,12 @@ router.post('/logout', async (req, res) => {
 
 router.post('/verify-token', async (req, res) => {
 	const { token } = req.body
-
 	const status = await isAuth(token)
 
-	res.send(status)
+	res.send((!status) ? {
+		status: 307,
+		msg: "Invalid token"
+	} : status)
 })
 
 
@@ -96,5 +101,12 @@ router.post('/username-is-taken', async (req, res) => {
 		})
 	}
 })
+
+router.post('/user', async (req, res) => {
+	const { token } = req.body
+	res.send(formattedUser(await userByToken(token)))
+})
+
+
 
 export { router as authRouter }

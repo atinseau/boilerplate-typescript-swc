@@ -1,7 +1,7 @@
 
 import readline from 'readline';
-import { getSynonym, injectSynonym } from './seeder/synonyms';
-import { removeWord, seedWord } from './seeder/words';
+import { injectSynonym } from './seeder/synonyms';
+import { removeWord } from './seeder/words';
 
 const rl = readline.createInterface({
 	input: process.stdin,
@@ -27,7 +27,6 @@ rl.on('line', async (line) => {
 			console.log("Missing parameter")
 
 		switch (args[1]) {
-			case "words": await seedWord(); break;
 			case "syn": await injectSynonym(); break;
 		}
 	}

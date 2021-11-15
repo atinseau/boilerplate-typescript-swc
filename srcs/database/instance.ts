@@ -11,8 +11,6 @@ export const qfetch = async (req: RequestDocument, body: Object = {}) => {
 		})
 		return data
 	} catch (e) {
-		if (process.env.DEBUG == "true")
-			console.log(e)
 		return null
 	}
 }

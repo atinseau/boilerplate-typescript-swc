@@ -12,58 +12,57 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.injectSynonym = exports.getSynonym = void 0;
+exports.injectSynonym = void 0;
 const puppeteer_1 = __importDefault(require("puppeteer"));
 const word_1 = require("../model/word");
 let browser = null;
-let page = null;
-const getSynonym = (word) => __awaiter(void 0, void 0, void 0, function* () {
+const getProperties = (data, property) => __awaiter(void 0, void 0, void 0, function* () {
+    let all = [];
+    yield Promise.all(data.map((e) => __awaiter(void 0, void 0, void 0, function* () {
+        all.push(yield (yield e.getProperty(property)).jsonValue());
+    })));
+    return all;
+});
+const getAllIds = (synos = []) => __awaiter(void 0, void 0, void 0, function* () {
+    const ids = [];
+    for (const syno of synos) {
+        let word = yield (0, word_1.searchWord)(syno);
+        if (!word)
+            word = yield (0, word_1.insertWord)(syno);
+        ids.push(word.id);
+    }
+    return ids;
+});
+const alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+const injectSynonym = () => __awaiter(void 0, void 0, void 0, function* () {
     if (!browser)
         browser = yield puppeteer_1.default.launch();
-    if (!page)
-        page = yield browser.newPage();
-    yield page.goto('http://www.synonymo.fr/syno/' + word);
-    const body = yield page.$$("body .fiche .synos li a");
-    let res;
-    if (body)
-        res = yield Promise.all(body.map((e) => __awaiter(void 0, void 0, void 0, function* () { return (yield e.getProperty('textContent')).jsonValue(); })));
-    return res;
-});
-exports.getSynonym = getSynonym;
-const injectSynonym = () => __awaiter(void 0, void 0, void 0, function* () {
-    let words = (yield (0, word_1.getAllWord)()).filter(e => e.synonym_ids == null);
-    let stop = false;
-    console.log("Loading...");
-    while (!stop) {
-        for (const entry of words) {
-            let synonyms = yield (0, exports.getSynonym)(entry.word);
-            if (synonyms.length > 5) {
-                const synonym_ids = [];
-                for (const synonym of synonyms) {
-                    const search = words.filter(e => e.word.toLocaleLowerCase() == synonym.toLocaleLowerCase()).map(e => e.id);
-                    if (!search.length) {
-                        if (synonym.split(' ').length == 1) {
-                            const insert = yield (0, word_1.insertWord)({ word: synonym });
-                            if (insert != null)
-                                synonym_ids.push(insert.id);
-                        }
-                    }
-                    else
-                        synonym_ids.push(...search);
-                }
-                yield (0, word_1.updateWord)(entry.id, synonym_ids);
-            }
-            else {
-                yield (0, word_1.deleteWord)(entry.id);
+    let dict = yield browser.newPage();
+    yield dict.goto('http://www.synonymo.fr/dictionnaire_des_synonymes');
+    const body = yield dict.$$("body .fiche-wrapper .fiche ul li a");
+    let letters = yield getProperties(body, 'href');
+    for (let i = 0; i < letters.length; i++) {
+        if (i >= alphabet.indexOf('v')) {
+            yield dict.goto(letters[i]);
+            const wordsDom = yield dict.$$("body .fiche-wrapper .fiche ul li a");
+            let wordsHref = yield getProperties(wordsDom, 'href');
+            let wordsText = yield getProperties(wordsDom, 'textContent');
+            for (let e = 0; e < wordsHref.length; e++) {
+                let word = yield (0, word_1.searchWord)(wordsText[e]);
+                if (!word)
+                    word = yield (0, word_1.insertWord)(wordsText[e]);
+                yield dict.goto(wordsHref[e]);
+                const synosDom = yield dict.$$("body .fiche-wrapper .fiche ul li a");
+                let synos = yield getProperties(synosDom, 'textContent');
+                const synoIds = yield getAllIds(synos);
+                const update = yield (0, word_1.updateWord)(word.id, synoIds);
+                if (!update)
+                    console.log(alphabet[i] + ", " + e + ": skip");
+                else
+                    console.log(alphabet[i] + ", " + e + ": new !");
             }
         }
-        words = (yield (0, word_1.getAllWord)()).filter(e => e.synonym_ids == null);
-        if (words.length < 1000)
-            stop = true;
     }
-    console.log("db seeded !");
-    if (browser != null)
-        yield browser.close();
 });
 exports.injectSynonym = injectSynonym;
 //# sourceMappingURL=synonyms.js.map
