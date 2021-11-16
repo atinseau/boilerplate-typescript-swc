@@ -15,6 +15,7 @@ export const definitionQuery = `
 	word_id
 `
 
+
 export const insertDefinition = async (catgram: String, defs: String [], origin_def: String, word_id: String): Promise<Definition> => {
 	const res = await qfetch (gql`
 		mutation MyMutation($catgram: String, $defs: json, $origin_def: String, $word_id: uuid) {
