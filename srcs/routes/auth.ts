@@ -1,7 +1,7 @@
 import Express from 'express'
 
 import { emailIsTaken, usernameIsTaken, userByToken } from '../model/user/query'
-import { register, login, logout, formattedUser, isAuth } from '../model/user/index'
+import { register, login, logout, formattedUser, isAuth, User } from '../model/user/index'
 import { authMiddleware } from '../middleware/auth'
 
 const router = Express.Router()
@@ -68,7 +68,7 @@ router.post('/verify-token', async (req, res) => {
 	res.send((!status) ? {
 		status: 307,
 		msg: "Invalid token"
-	} : status)
+	} : formattedUser(status as User))
 })
 
 

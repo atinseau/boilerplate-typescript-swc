@@ -1,13 +1,12 @@
 import bcrypt from 'bcrypt'
 import jwt from 'jsonwebtoken'
-import { Word } from '../word'
 import { getUserByUsername, insertUser, updateUser, userById, userByToken } from './query'
 
 export interface BasicUser {
 	email?: String,
 	username?: String,
-	saved_word?: Word[],
-	[key: string]: String | String[] | undefined | Word[]
+	saved_word?: String[],
+	[key: string]: String | String[] | undefined
 }
 
 export interface User extends BasicUser {
@@ -19,9 +18,7 @@ export interface User extends BasicUser {
 export const formattedUser = (user: User) : BasicUser => {
 	if (user) {
 		delete user['id']
-		delete user['token']
 		delete user['password']
-
 		return user
 	}
 	return null

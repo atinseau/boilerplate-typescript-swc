@@ -1,12 +1,13 @@
 
 import { gql } from 'graphql-request'
 import { qfetch } from '../../database/instance'
-import { definitionQuery } from '../definitions'
+import { Definition, definitionQuery } from '../definitions'
 
 export interface Word {
 	word: String
 	id?: String
 	synonym_ids?: String[]
+	definition: Definition
 }
 
 export const wordQuery = `

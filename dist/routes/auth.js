@@ -51,7 +51,7 @@ router.post('/verify-token', async (req, res)=>{
     res.send(!status ? {
         status: 307,
         msg: "Invalid token"
-    } : status);
+    } : formattedUser(status));
 });
 router.post('/email-is-taken', async (req, res)=>{
     const { email  } = req.body;

@@ -4,7 +4,6 @@ import { getUserByUsername, insertUser, updateUser, userById, userByToken } from
 export const formattedUser = (user)=>{
     if (user) {
         delete user['id'];
-        delete user['token'];
         delete user['password'];
         return user;
     }
