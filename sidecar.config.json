@@ -1,0 +1,12 @@
+{
+	"commands": [
+		{
+			"name": "swc",
+			"command": "yarn swc"
+		},
+		{
+			"name": "node",
+			"command": "yarn node:dev"
+		}
+	]
+}
