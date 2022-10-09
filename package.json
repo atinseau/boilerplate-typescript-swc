@@ -7,13 +7,13 @@
 	"scripts": {
 		"swc": "swc srcs -w --out-dir dist",
 		"node:dev": "nodemon --quiet --experimental-modules --es-module-specifier-resolution=node dist",
-		"dev": "sidecar --path=sidecar.config.json"
+		"dev": "concurrently \"yarn swc\" \"yarn node:dev\""
 	},
 	"author": "",
 	"license": "ISC",
 	"dependencies": {
 		"@swc/cli": "^0.1.51",
-		"dotenv": "^10.0.0",
+		"dotenv": "^10.0.0"
 	},
 	"presets": [
 		"@babel/preset-env"
@@ -21,6 +21,7 @@
 	"devDependencies": {
 		"@swc/core": "^1.2.108",
 		"@types/node": "^16.11.1",
+		"concurrently": "^7.4.0",
 		"nodemon": "^2.0.14",
 		"typescript": "^4.4.4"
 	}

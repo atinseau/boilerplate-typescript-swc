@@ -1,0 +1,57 @@
+Arguments: 
+  /home/arthur/.nvm/versions/node/v16.16.0/bin/node /home/arthur/.nvm/versions/node/v16.16.0/bin/yarn
+
+PATH: 
+  /home/arthur/.vscode-server/bin/64bbfbf67ada9953918d72e1df2f4d8e537d340e/bin/remote-cli:/home/arthur/.nvm/versions/node/v16.16.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  16.16.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  SyntaxError: /home/arthur/DEV/NODEJS/boilerplate-typescript-swc/package.json: Unexpected token } in JSON at position 408
+      at JSON.parse (<anonymous>)
+      at /home/arthur/.nvm/versions/node/v16.16.0/lib/node_modules/yarn/lib/cli.js:1629:59
+      at Generator.next (<anonymous>)
+      at step (/home/arthur/.nvm/versions/node/v16.16.0/lib/node_modules/yarn/lib/cli.js:310:30)
+      at /home/arthur/.nvm/versions/node/v16.16.0/lib/node_modules/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+  	"name": "api",
+  	"version": "1.0.0",
+  	"description": "",
+  	"main": "dist/index.js",
+  	"type": "module",
+  	"scripts": {
+  		"swc": "swc srcs -w --out-dir dist",
+  		"node:dev": "nodemon --quiet --experimental-modules --es-module-specifier-resolution=node dist",
+  		"dev": "sidecar --path=sidecar.config.json"
+  	},
+  	"author": "",
+  	"license": "ISC",
+  	"dependencies": {
+  		"@swc/cli": "^0.1.51",
+  		"dotenv": "^10.0.0",
+  	},
+  	"presets": [
+  		"@babel/preset-env"
+  	],
+  	"devDependencies": {
+  		"@swc/core": "^1.2.108",
+  		"@types/node": "^16.11.1",
+  		"nodemon": "^2.0.14",
+  		"typescript": "^4.4.4"
+  	}
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
